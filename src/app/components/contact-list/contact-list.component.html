@@ -10,7 +10,7 @@
           <table class="table table-striped table-bordered">
             <tbody>
               <tr>
-               <td>Name: <span class="contact-details">{{item.name}}</span></td>
+                <td>Name: <span class="contact-details">{{item.name}}</span></td>
               </tr>
               <tr>
                 <td>Mobile: <span class="contact-details">{{item.mobile}}</span></td>
@@ -20,6 +20,11 @@
               </tr>
             </tbody>
           </table>
+          <div>
+            <button class="btn btn-sm btn-primary" routerLink="/view-contact">view</button>
+            <button class="btn btn-sm btn-warning ms-2" routerLink="/update-contact">update</button>
+            <button class="btn btn-sm btn-danger ms-2">delete</button>
+          </div>
         </div>
       </div>
     </div>

@@ -8,6 +8,6 @@ export const routes: Routes = [
     { path: "", component: HomeComponent },
     { path: "contacts", component: HomeComponent },
     { path: "create-contact", component: CreateContactComponent },
-    { path: "view-contact", component: ViewContactComponent },
+    { path: "view-contact/:id", component: ViewContactComponent },
     { path: "update-contact", component: UpdateContactComponent }
 ];

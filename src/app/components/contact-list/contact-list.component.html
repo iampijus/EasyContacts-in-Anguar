@@ -21,7 +21,7 @@
             </tbody>
           </table>
           <div>
-            <button class="btn btn-sm btn-primary" routerLink="/view-contact">view</button>
+            <button class="btn btn-sm btn-primary" [routerLink]="['/view-contact',item.id]">view</button>
             <button class="btn btn-sm btn-warning ms-2" routerLink="/update-contact">update</button>
             <button class="btn btn-sm btn-danger ms-2">delete</button>
           </div>

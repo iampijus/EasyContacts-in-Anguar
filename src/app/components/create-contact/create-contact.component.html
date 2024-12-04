@@ -1,7 +1,8 @@
 <div class="ms-5">
     <h5>Create Contact</h5>
     <form class="w-25" [formGroup]="form" (ngSubmit)="onSubmit()">
-        <input type="text" class="form-control mt-3" id="name" name="name" placeholder="Name" formControlName="name" />
+        <input type="text" class="form-control mt-3" id="name" name="name" placeholder="Name" formControlName="name"
+            [ngClass]="{'is-invalid': name.invalid && name.touched}" />
         @if(name.invalid && name.touched){
         <div class="alert alert-danger alert-msg">
             @if(name.errors?.required){
@@ -12,7 +13,9 @@
         </div>
         }
         <input type="text" class="form-control mt-2" id="photo" name="photo" placeholder="Photo Url"
-            formControlName="photo">
+            formControlName="photo"
+            [ngClass]="{'is-invalid' : photo.invalid && photo.touched}"
+            />
 
         @if(photo.invalid && photo.touched){
         <div class="alert alert-danger alert-msg">
@@ -22,7 +25,9 @@
         </div>
         }
         <input type="text" class="form-control mt-2" id="mobile" name="mobile" placeholder="Mobile"
-            formControlName="mobile" />
+            formControlName="mobile" 
+            [ngClass]="{'is-invalid': mobile.invalid && mobile.touched}"
+            />
         @if(mobile.invalid && mobile.touched){
         <div class="alert alert-danger alert-msg">
             @if(mobile.errors?.required){
@@ -33,7 +38,9 @@
         </div>
         }
         <input type="text" class="form-control mt-2" id="email" name="email" placeholder="Email"
-            formControlName="email" />
+            formControlName="email" 
+            [ngClass]="{'is-invalid': email.invalid && email.touched}"
+            />
         @if(email.invalid && email.touched){
         <div class="alert alert-danger alert-msg">
             @if(email.errors?.pattern){
@@ -44,7 +51,7 @@
         <input type="text" class="form-control mt-2" id="company" name="company" placeholder="Company"
             formControlName="company" />
         <div class="mt-3">
-            <button type="submit" class="btn btn-sm btn-success">Create</button>
+            <button type="submit" class="btn btn-sm btn-success"[disabled]="form.invalid">Create</button>
             <button type="button" class="btn btn-sm btn-secondary ms-2" (click)="onCancel()">Cancel</button>
         </div>
     </form>

@@ -1,1 +1,21 @@
-<p>update-contact works!</p>
+<div class="d-flex justify-content-center mt-5">
+    <div class="update-contact-img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuvwJG3J0AvDmbaE8_obrEW5IHHEB2zDaYEw&s" alt=""
+            srcset="">
+    </div>
+
+    <div class="update-contact-form-container">
+        <h5>Update Contact</h5>
+        <form class="update-contact-form">
+            <input type="text" class="form-control mt-3" placeholder="Name"/>
+            <input type="text" class="form-control mt-3" placeholder="Photo Url"/>
+            <input type="text" class="form-control mt-3" placeholder="Mobile"/>
+            <input type="text" class="form-control mt-3" placeholder="Email"/>
+            <input type="text" class="form-control mt-3" placeholder="Company"/>
+            <div class="mt-3">
+                <button type="submit" class="btn btn-sm btn-success">Update</button>
+                <button type="button" class="btn btn-sm btn-secondary ms-2" (click)="onCancel()">Cencel</button>
+            </div>
+        </form>
+    </div>
+</div>

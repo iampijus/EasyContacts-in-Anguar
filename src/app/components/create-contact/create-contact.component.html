@@ -24,7 +24,7 @@
             }
         </div>
         }
-        <input type="text" class="form-control mt-2" id="mobile" name="mobile" placeholder="Mobile"
+        <input type="number" class="form-control mt-2" id="mobile" name="mobile" placeholder="Mobile"
             formControlName="mobile" 
             [ngClass]="{'is-invalid': mobile.invalid && mobile.touched}"
             />
@@ -37,7 +37,7 @@
             }
         </div>
         }
-        <input type="text" class="form-control mt-2" id="email" name="email" placeholder="Email"
+        <input type="email" class="form-control mt-2" id="email" name="email" placeholder="Email"
             formControlName="email" 
             [ngClass]="{'is-invalid': email.invalid && email.touched}"
             />

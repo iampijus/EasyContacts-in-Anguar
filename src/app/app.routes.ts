@@ -9,5 +9,5 @@ export const routes: Routes = [
     { path: "contacts", component: HomeComponent },
     { path: "create-contact", component: CreateContactComponent },
     { path: "view-contact/:id", component: ViewContactComponent },
-    { path: "update-contact", component: UpdateContactComponent }
+    { path: "update-contact/:id", component: UpdateContactComponent }
 ];
